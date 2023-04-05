@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Media Queries</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
     <header>
-      <h1>Header</h1>
-      <nav><h2>Nav</h2></nav>
+        <h1>Our Staff</h1>
+
+        <nav>
+          <ul>
+              <li><a href="#joe">Joe</a></li>
+              <li><a href="#matt">Matt</a></li>
+              <li><a href="#jane">Jane</a></li>
+          </ul>
+        </nav>
     </header>
 
     <main>
-      <h2>Main</h2>
+
+        <article class="card" id="joe">
+            <figure>
+                <img src="img/profile1-500x500.png" alt="Joe Coder" width="500" height="auto">
+                <figcaption>Joe Coder</figcaption>
+              </figure>
+              <p><q>I code stuff.</q></p>
+        </article>
+
+        <article class="card" id="matt">
+            <figure>
+                <img src="img/profile2-500x500.png" alt="Matt Designer" width="500" height="auto">
+                <figcaption>Matt Designer</figcaption>
+              </figure>
+              <p><q>I design stuff.</q></p>
+        </article>
+
+        <article class="card" id="jane">
+            <figure>
+                <img src="img/profile3-500x500.png" alt="Joe Dev Rel" width="500" height="auto">
+                <figcaption>Joe Dev Rel</figcaption>
+              </figure>
+              <p><q>I teach stuff.</q></p>
+        </article>
+
     </main>
 
     <footer>
-      <h2>Footer</h2>
+        &copy; Acme Co.
     </footer>
-  </body>
+</body>
+
 </html>
