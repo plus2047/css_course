@@ -17,6 +17,7 @@ body {
   width: 75vw;
   height: 85vh;
   margin: 40px auto;
+  position: relative;
 }
 
 .inner-container {
@@ -31,4 +32,81 @@ body {
   height: 150px;
   color: #fff;
   padding: 1rem;
+}
+
+.sticky {
+  background-color: black;
+  position: sticky;
+  top: 0
+}
+
+.absolute {
+  background-color: #00f;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.relative {
+  background-color: red;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+.fixed {
+  background-color: green;
+  position: fixed;
+  top: 0; 
+  left: 0;
+}
+
+
+section {
+  height: 100vh;
+}
+
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+
+header, footer {
+  color: white;
+  text-align: center;
+  height: 100px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  font-size: 5rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #000;
+  width: 100%;
+  font-size: 3rem;
+}
+
+a:visited {
+  color: white;
+}
+
+.social {
+  background-color: royalblue;
+  color: white;
+  font-size: inherit;
+  padding: 1rem;
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 1;
 }

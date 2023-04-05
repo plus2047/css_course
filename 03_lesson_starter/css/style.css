@@ -2,4 +2,14 @@ body {
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
+
+    background: papayawhip;
+    color: rgb(255,0,0)
+}
+
+p {
+    /* transparent */
+    /* color: rgba(0,0,0,0.5); */
+    /* color: #000000 */
+    color: #333
 }

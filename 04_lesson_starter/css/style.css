@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-size: 2rem;
+    background-color: skyblue;
+    width: 50%;
+}
+
+h1 {
+    width: 50%;
+    border: 2px dashed red;
+    padding: 0.5em;
+}
+
+p {
+    font-size: 2rem
+}

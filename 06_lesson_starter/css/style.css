@@ -1,0 +1,18 @@
+body {
+    padding: 10%;
+    font-size: 2rem;
+    color: gray;
+}
+
+input, button {
+    font: inherit;
+    color: inherit;
+}
+
+p {
+    text-decoration: underline;
+    text-align: left;
+    text-indent: 2ch;
+    line-height: 1.5;
+    /* letter-spacing: 0.1em; */
+}

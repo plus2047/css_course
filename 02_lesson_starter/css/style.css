@@ -1,0 +1,39 @@
+body {
+    font-size: 22px;
+}
+
+/* if removed the , it means h2 inside h1 */
+h1, h2 {
+    color: blue
+}
+
+p {
+    color: purple;
+}
+
+p {
+    color: red;
+}
+
+p span {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+* {
+    font-family: monospace;
+}
+
+/* .classname used to select class */
+.gray {
+    color: gray
+}
+
+/* element selector < class selector < id selector */
+
+/* #id used to select id */
+/* id should be unique */
+/* avoid to use id inside css */
+#second {
+    font-style: italic;
+}

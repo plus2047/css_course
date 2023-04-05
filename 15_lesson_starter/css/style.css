@@ -9,6 +9,15 @@
 body {
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
+
+  display:grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: 75px auto 75px;
+  grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn sb sb"
+    "ft ft ft ft ft ft ft ft ft";
+  gap: 1rem
 }
 
 .box {
@@ -19,6 +28,25 @@ body {
 }
 
 
+.container {
+  grid-area: mn;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 2fr);
+  grid-auto-rows: 200px;
+  background-color: antiquewhite;
+}
 
+.head {
+  grid-area: hd;
+  background-color: blue;
+}
 
+.sidebar {
+  grid-area: sb;
+  background-color: gray;
+}
 
+.footer {
+  grid-area: ft;
+  background-color: green;
+}

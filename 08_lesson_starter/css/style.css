@@ -5,3 +5,8 @@ body {
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
 }
+
+ol {
+  list-style-type: none;
+  padding: 0;
+}
