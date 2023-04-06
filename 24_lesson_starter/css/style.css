@@ -1,3 +1,5 @@
+/* Whole Page */
+
 html {
     font-size: 22px;
 }
@@ -9,6 +11,8 @@ body {
     padding: 1rem;
     border-left: 1px solid #333;
     border-right: 1px solid #333;
+    background-image: linear-gradient(#000, #333);
+    color: white
 }
 
 th, td, caption {
@@ -16,4 +20,155 @@ th, td, caption {
     font-family: 'Courier New', Courier, monospace;
     border-collapse: separate;
     padding: 0.5rem;
+}
+
+/* Header */
+
+header {
+    position: relative
+}
+
+header .sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 0;
+    background-color: #111;
+    padding: 1rem;
+    margin: 0;
+}
+
+header nav ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    background-color: #333;
+    height: 2rem
+}
+
+header nav a:any-link {
+    color: white
+}
+
+header nav ul li {
+    flex-grow: 1;
+}
+
+header h1::before {
+    content: '🌮 '
+}
+
+header h1::after {
+    content: ' 🌮'
+}
+
+header figure {
+    padding: 0;
+    margin: 0;
+}
+
+header figure img {
+    min-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+header .banner {
+    display: flex;
+    background-color: rgba(0, 128, 0, 0.776);
+    height: 2rem;
+    width: 10rem;
+    align-items: center;
+    justify-content: center;
+    transform: skew(0, -5deg);
+    position: absolute;
+    top: -100;
+}
+
+/* Main */
+
+main {
+    margin: 0;
+    padding: 1rem;
+    background-color: #333;
+}
+
+main a:any-link {
+    color: white;
+}
+
+.p--center {
+    text-align: center;
+}
+
+main :is(h1, h2, h3, h4, h5) {
+    font-style: italic;
+}
+
+main table {
+    width: 100%;
+    text-align: center;
+}
+
+main table :is(th,td) {
+    border: 4px solid #fff;
+    height: 3rem;
+}
+
+main table .tab-lu {
+    border-top-left-radius: 0.8rem;
+}
+main table .tab-ru {
+    border-top-right-radius: 0.8rem;
+}
+main table .tab-ld {
+    border-bottom-left-radius: 0.8rem;
+}
+main table .tab-rd {
+    border-bottom-right-radius: 0.8rem;
+}
+
+/* main dd {
+    margin: 0
+} */
+
+main :is(input, textarea) {
+    display: block;
+    width: 100%;
+    border-radius: 0.4rem;
+}
+
+main button {
+    height: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 0.4rem;
+}
+
+main input {
+    height: 2rem;
+}
+
+main textarea {
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: sticky;
+    bottom: 0;
+    background-color: #000;
+    height: 3rem;
+    
 }
